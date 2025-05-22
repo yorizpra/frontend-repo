@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "NEXT_PUBLIC_USE_EMULATOR=true next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "emulate": "firebase emulators:start --only auth --project your-project-id"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
